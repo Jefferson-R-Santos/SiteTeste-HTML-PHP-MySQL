@@ -1,0 +1,63 @@
+<?php
+session_start();
+print_r($_SESSION);
+
+if (!isset($_SESSION['tnome']) == true ) and (!isset($_SESSION['tsenha']) == true)) 
+{
+    unset($_SESSION['tnome'] = $nome);
+    unset($_SESSION['tsenha'] = $senha);
+    header('Location: login.html');
+}
+$logado = $_SESSION['tnome'];
+
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
+	<style>
+    
+    body {
+color: white ;
+font-family: Arial, helvetica, sans-serif;
+background: linear-gradient(to right, red, black);
+font-size: x-large;
+text-align: center;
+    }
+    .box {
+position: absolute;
+top: 100%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: rgba(0, 0, 0, 0.5);
+padding: 30px;
+border-radius: 15px;
+    }
+
+   a{
+text-decoration: none;
+color: white;
+border: 3px solid red;
+border-radius: 10px;
+padding: 10px;
+   }
+
+	</style>
+</head>
+<body>
+
+      <h1>Bem vindo</h1>
+      <h2>Esse é meu site teste</h2>
+      <h2>Teste HTML,PHP e MySQL</h2>
+      <h3>Se você tá aqui é porque eu sou foda e consegui</h3>
+      <h4>Agora pega a pipoca é admira</h4>
+      
+    <div class="box">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/zeJ3KpmgIwA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <a href="home.html">Voltar</a>
+</body>
+</html>

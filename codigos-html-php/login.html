@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+ <meta charset="UTF-8"/>
+<link rel="stylesheet" type="text/css" href="C:\Users\kamih\Downloads\projeto-glass-html5\_css/estilo.css">
+<link rel="stylesheet" type="text/css" href="C:\Users\kamih\Downloads\projeto-glass-html5\_css/form.css">
+<script type="text/javascript" src="C:\Program Files (x86)\EasyPHP-Devserver-17\eds-www\www\_javascript/funcoes.js"></script>
+
+<style>
+
+    .box {
+position: absolute;
+top: 100%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: rgba(0, 0, 0, 0.5);
+padding: 30px;
+border-radius: 15px;
+    }
+
+   body {
+color: white ;
+font-family: Arial, helvetica, sans-serif;
+background: linear-gradient(to right, red, black);
+font-size: x-large;
+text-align: center;
+    }
+#submit {
+background-image: linear-gradient(to right, red, black);
+border: 3px solid red;
+padding: 10px;
+border-radius: 10px;
+color: white;
+}    
+a {
+text-decoration: none;    
+background-image: linear-gradient(to right, red, black);
+border: 3px solid red;
+padding: 10px;
+border-radius: 10px;
+color: white;
+}
+
+  </style>
+
+</head>
+<script language="javascript"
+src="C:\Program Files (x86)\EasyPHP-Devserver-17\eds-www\www\_javascript/funcoes.js">
+</script>
+<body>
+<div id="interface">
+<header id="cabecalho">
+<hgroup>
+<h1>Teste Cadastro </h1>
+<h2>2023 </h2>
+</hgroup>
+
+
+</header>
+<a href="home.html">Home</a>
+<h1>Bem vindo</h1>
+<h2>Teste HTML,PHP e MySQL</h2>
+<h3 class="direita">Feito em 10/02/2023</h3>
+
+<div class="box">
+<form method="post" id="fcontato" action="testlogin.php">
+    <fieldset id="usuario"> <legend>Você está cadastrado?</legend>
+    <p> <label for="cnome">Nome:</label> <input type="text" name="tnome" id="cnome" size="30" placeholder="nome completo"></p>
+    <p> <label for="csenha">Senha:</label> <input type="password" name="tsenha" id="csenha" size="8" maxlength="8" placeholder="8 digitos">
+        <input type="submit" name="submit" value="Enviar"> 
+</form>
+</div>
+
+<footer id="baixo">
+<p><h3>Copyright 2023 - by Jefferson Ribeiro Santos <br/>
+</h3></p>
+</footer>
+</div>
+</body>
+
+
+</html>
